@@ -1,5 +1,6 @@
 SZ2: Error-bounded Lossy Compressor for HPC Data
 =====
+
  (C) 2016-2022 by Mathematics and Computer Science (MCS), Argonne National Laboratory.
        See COPYRIGHT in top-level directory.
 
@@ -8,6 +9,7 @@ SZ2: Error-bounded Lossy Compressor for HPC Data
 * Other Contributors: Robert Underwood, Sihuan Li, Ali M. Gok, Cody Rivera, Xiangyu Zou, Wen Xia
 
 ## Citations
+
 **Kindly note: This site contains the implementation of SZ2.x. If you mention SZ in your paper, the most appropriate citation is including these three references (***ICDE2021, HPDC2020 and BigData2018***), because they cover the whole design and implementation of the latest version of SZ**.
 
 **Note**: **SZ3** has been released [**here**](https://github.com/szcompressor/SZ3). SZ3 has much higher compression ratios than SZ2 in many cases, with comparable throughput (suffering slightly degraded throughput though). Details can be found in our ICDE21 paper. 
@@ -31,11 +33,13 @@ This document simply introduces how to install and use the SZ compressor. More d
 ## Installation
 
 ### Installation way 1:
+
 * ./configure --prefix=[INSTALL_DIR] (Please use --enable-fortran if you need Fortran interface)
 * make
 * make install
 
 ### Installation way 2:
+
 * mkdir build && cd build
 * cmake .. -DCMAKE_INSTALL_PREFIX:PATH=[INSTALL_DIR]
 * make
@@ -54,6 +58,7 @@ Alternatively, you can also also call our API to do the compression/decompressoi
 
 ## Compression
 --------------
+
 * ./test_compress sz.config testdouble_8_8_8_128.dat 8 8 8 128
 * ./test_compress sz.config testdouble_8_8_128.dat 8 8 128
 
